@@ -39,5 +39,5 @@ You can read more about the various models in the dissertation document [here](h
 ## Advanced usage
 You can also adjust the strength of the chemicals yourself, to come up with other interesting patterns. Using small increments, adjust the strengths with the two sliders and click simulate to see how they affect the simulation.
 
-**Bear in mind, the strengths are very sensitive to each other, and it's easy to end up with patterns that are just a single colour. Try choosing a preset again, and adjust the sliders by very small increments. Press simulate, and see how the pattern has changed before adjusting the sliders further.**
+**Be aware: the strengths are very sensitive to each other, and it's easy to end up with patterns that are just a single colour. Try choosing a preset again, and adjust the sliders by very small increments. Press simulate, and see how the pattern has changed before adjusting the sliders further.**
 
