@@ -1,15 +1,61 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
  *= require_tree .
  *= require_self
  */
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  background-color: beige;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+.form-control {
+  margin: 0 1rem 0 1rem;
+  background-color: #80808038;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+label {
+  text-transform: uppercase;
+  color: #0e743b;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  font-size: 0.9rem;
+  display: block;
+  font-family: Overpass;
+}
+
+button, [type=submit], [type=reset] {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  padding: 0.4rem 0.3rem;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+
+button:disabled, button[disabled],
+[type=submit]:disabled, [type=submit][disabled],
+[type=reset]:disabled, [type=reset][disabled] {
+  cursor: wait;
+}
