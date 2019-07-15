@@ -1,3 +1,6 @@
+
+![image](https://raw.githubusercontent.com/rai-hi/ca-skin-patterning/master/SkinSim/Images/regyoung.png)
+
 # Ruby/Rails Skin Patterning Simulation
 This project is a web app, allowing you to simulate skin pattern development in animals (e.g. leopards, zebra and dogs).
 
