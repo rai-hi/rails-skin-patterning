@@ -20,7 +20,7 @@ When the page first loads, a simulation will run in the background on the server
 
 To reproduce other types of pattern, select a preset from the dropdown in the panel at the bottom, and press simulate. Once complete, it will be played in the top box.
 
-To understand the other controls and come up with your own simulations, read the section on custom simulations. In order to understand it, you may want to also read the model information section.
+To understand the other controls and come up with your own simulations, read the `Advanced usage` section. In order to understand it, you may want to also read the `Model information` section.
 
 ## Demo
 You can view a running demo of the project at [this link](https://skin-simulator.herokuapp.com).
