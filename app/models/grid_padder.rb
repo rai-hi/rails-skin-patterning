@@ -2,7 +2,6 @@
 
 # Class to handle the adding and removing of padding of Grids
 # TODO: would be better to use the actual grid.width/height throughout instead of nested_array.size
-# FIXME: can delete depadder after committing whats here already potentially
 class GridPadder
   def initialize(pad_value:, pad_width:, pad_height:)
     @pad_value = pad_value
