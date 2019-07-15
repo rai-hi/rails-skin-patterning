@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+# Class to simulate the development of a skin pattern, and produce frames for
+# animating the progression of the simulation
 class SkinSimulator
   attr_reader :state
 
@@ -11,7 +13,6 @@ class SkinSimulator
     @stable = false
     @state = grid
 
-    # TODO: Test params get passed through
     @rule = WolframRule.generate(
       distance_1_value: activator_strength,
       distance_2_value: inhibitor_strength,

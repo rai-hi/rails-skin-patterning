@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-# A rule which is a central area of one value, with two other values in rings surrounding the inner area.
-# This represents two chemicals with different values and ranges.
-# TODO: clarify the above description based on dissertation
+# Class representing Stephen Wolfram's proposed cellular automata for generating
+# skin patterns. Represents the neighbourhood of a given skill cell, and two
+# chemicals present in its neighbourhood that act to encourage or inhibit
+# the pigmentation of the cell.
 class WolframRule
   attr_accessor :distance_1_value, :distance_2_value
 

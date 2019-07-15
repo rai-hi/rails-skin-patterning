@@ -2,7 +2,6 @@
 
 require 'test_helper'
 
-# TODO: re-order for clarity
 class GridPadderTest < MiniTest::Test
   def setup
     @non_padded_values = [
@@ -49,12 +48,12 @@ class GridPadderTest < MiniTest::Test
     assert_equal original_values, original.values
   end
 
-  def test_pad_depad_returns_starting_values
-    assert_equal @non_padded_grid.values, @depadded.values
-  end
-
   def test_padded_grid_still_valid
     assert @padded.valid?
+  end
+
+  def test_pad_depad_returns_starting_values
+    assert_equal @non_padded_grid.values, @depadded.values
   end
 
   def test_depadded_grid_still_valid
