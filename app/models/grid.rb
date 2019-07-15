@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Class representing a grid of values.
+# Class representing a grid of numeric values.
 #
 # Values is a nested array, representing the values of the grid. The outer array
 # contains the rows, and each inner array is a single row of values.
@@ -12,8 +12,8 @@
 #             [0, 0, 0]
 #           ]
 class Grid
-  # `include` & `attr_accessor` since the class isn't persisted to DB
-  include ActiveModel::Model
+  include ActiveModel::Model # For validations
+
   attr_reader :values
 
   validate :validate_not_empty, :validate_row_sizes, :validate_values
