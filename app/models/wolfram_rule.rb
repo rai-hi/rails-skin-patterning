@@ -58,20 +58,11 @@ class WolframRule
       output
     end
 
+    # TODO: the two *_striped methods are actually inverted. The literature
+    # seems to contradict the experimental results, so these have been swapped
+    # for now until the issue can be investigated.
+
     def vertically_striped(unstriped)
-      unstriped.map do |row|
-        updated_row = row
-
-        # Zero out right- & left-most 2 values on each row
-        updated_row[0] = 0
-        updated_row[1] = 0
-        updated_row[-1] = 0
-        updated_row[-2] = 0
-        updated_row
-      end
-    end
-
-    def horizontally_striped(unstriped)
       output = unstriped.dup
       row_width = output[0].length
 
@@ -81,6 +72,19 @@ class WolframRule
       output[-1] = [0] * row_width
       output[-2] = [0] * row_width
       output
+    end
+
+    def horizontally_striped(unstriped)
+      unstriped.map do |row|
+        updated_row = row
+
+        # Zero out right- & left-most 2 values on each row
+        updated_row[0] = 0
+        updated_row[1] = 0
+        updated_row[-1] = 0
+        updated_row[-2] = 0
+        updated_row
+      end
     end
   end
 end
