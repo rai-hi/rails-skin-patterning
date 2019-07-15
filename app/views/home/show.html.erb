@@ -13,9 +13,20 @@
 
     <%= form_with url: skin_simulation_path do |form| %>
       <div class="presets">
-        <label for="presets">Load Preset Values</label>
+        <label for="presets">Preset</label>
         <select name="presets">
         </select>
+      </div>
+
+      <div class='simulation-buttons'>
+        <%= form.submit 'Simulate ❖', class: 'simulate-button' %>
+        <%= form.submit 'Reset Options ✖︎', type: 'reset', class: 'reset-button' %>
+      </div>
+
+      <div class="advanced-divider">
+        <span>
+          Advanced
+        </span>
       </div>
 
       <div class="simulation-controls">
@@ -38,11 +49,6 @@
           <%= form.select :striped_direction, [:none, :vertical, :horizontal] %>
         </div>
       </div>	
-
-      <div class='simulation-buttons'>
-        <%= form.submit 'Simulate ❖', class: 'simulate-button' %>
-        <%= form.submit 'Reset Options ✖︎', type: 'reset', class: 'reset-button' %>
-      </div>
     <% end %>
   </div>
 

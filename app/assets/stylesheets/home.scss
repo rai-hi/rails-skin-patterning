@@ -50,6 +50,26 @@
     }
   }
 
+  .advanced-divider {
+    height: 9px;
+    width: 70%;
+    border-bottom: 1px solid #0e743b;
+    text-align: center;
+    padding: 0rem 1rem;
+    margin: 1rem auto 2rem auto;
+    background-color: #FFF;
+    span {
+      padding: 3px 5px;
+      background-color: white;
+      text-transform: uppercase;
+      color: #0e743b;
+      font-weight: bold;
+      letter-spacing: 0.05rem;
+      font-size: 0.9rem;
+      font-family: Overpass;
+    }
+  }
+
   .simulation-buttons {
     display: flex;
     justify-content: center;
